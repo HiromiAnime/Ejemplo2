@@ -1,0 +1,288 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #e6ccff; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #f599c49d; 
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    background-color: #ff000080; 
+  }
+}
+
+
+@media (max-width: 599px) {
+  body {
+    background-color: #55cada81; 
+  }
+}
+
+.lover-hero {
+  background-image: url('../img/lover.png');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.overlay h1 {
+  font-size: 2.8em;
+  color: #c92d85;
+}
+
+.subtitulo {
+  font-style: italic;
+  color: #70307b;
+}
+
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+
+section {
+  background-color: #fffafc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3);
+  margin-bottom: 30px;
+}
+
+.biografia p {
+  margin-bottom: 20px; 
+}
+
+
+.navegacion .botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.navegacion a {
+  background-color: #e6ccff;
+  color: #2c2c2c;
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navegacion a:hover {
+  background-color: #cce6ff;
+}
+
+
+footer {
+  background-color: #fcd6e3;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #2c2c2c;
+  border-top: 2px solid #e6ccff;
+}
+
+
+.contacto label {
+  font-weight: bold;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e6ccff;
+  border-radius: 10px;
+  background-color: #fef6fb;
+  font-family: inherit;
+}
+
+.contacto input[type="submit"] {
+  background-color: #e6ccff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto input[type="submit"]:hover {
+  background-color: #cce6ff;
+}
+
+
+.noticias {
+  background-color: #e6ccff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(170, 130, 255, 0.3);
+  margin-bottom: 30px;
+}
+
+.noticias h2 {
+  color: #70307b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.noticia {
+  background-color: #fffafc;
+  padding: 15px;
+  border-left: 5px solid #c92d85;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.noticia h3 {
+  color: #c92d85;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .lover-hero {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 2em;
+  }
+
+  .overlay p {
+    font-size: 1em;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .navegacion .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto input[type="text"],
+  .contacto input[type="email"],
+  .contacto textarea {
+    font-size: 1em;
+  }
+
+  .noticia {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .lover-hero {
+    height: 200px;
+  }
+
+  .overlay h1 {
+    font-size: 1.8em;
+  }
+
+  .subtitulo {
+    font-size: 0.9em;
+  }
+
+  .biografia p, .fans p {
+    font-size: 14px;
+  }
+
+  .contacto input[type="text"],
+  .contacto input[type="email"],
+  .contacto textarea {
+    font-size: 0.9em;
+  }
+
+  .botones a {
+    font-size: 0.9em;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
+
+
+.bio-texto {
+  text-align: center;
+  font-size: 16px;
+  color: #2c2c2c;
+  line-height: 1.6;
+  margin-top: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-imagen-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.bio-imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .bio-imagen {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bio-texto {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-imagen {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bio-texto {
+    font-size: 13px;
+  }
+}
