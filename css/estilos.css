@@ -21,7 +21,7 @@ body {
 
 @media (min-width: 600px) and (max-width: 1023px) {
   body {
-    background-color: #332b40; 
+    background-color: #880303; 
   }
 }
 
@@ -281,6 +281,11 @@ footer {
     width: 100px;
     height: 100px;
   }
+
+  .bio-texto {
+    font-size: 13px;
+  }
+}
 
   .bio-texto {
     font-size: 13px;
